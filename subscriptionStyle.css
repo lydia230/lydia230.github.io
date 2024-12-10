@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Set body font for the whole page */
+body {
+    font-family: Inter;
+     letter-spacing: 0.55px;
+     font-size: 16px;
+     line-height: 28px;
+     background-color: rgb(220, 217, 214); 
+     
+}
+
+/* Set the title in the center of the page */
+body h1 {
+    color: rgba(0, 0, 0, 75%);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 10px;
+    
+}
+
+/* Set size and other settings for the header*/
+header {
+    height: 50px;
+    width: 100%;
+    margin-right: 20px;
+    border-bottom: 1px solid ;
+}
+
+/* Pages that are not the index will only have 1 element to the left */
+header h4 {
+    float: left ;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: 200;
+}
+
+/* Make nav float to the right */
+nav {
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+/* Remove the text decoration and the color from the a element and set a transition when the user hovers over them */
+header a{
+    text-decoration: none;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 11px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease ;
+}
+
+/* Effect when the user hovers over an a element from the header */
+/* Underline appears */
+header a:hover {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+/* On the company name, the letters become white when the user hovers over it */
+header nav a:first-child {
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 200px;
+    transition: border 0.3s, color 0.3s ease;
+    
+}
+
+/* effect on the company logo */
+/* Changes color and removes the border */
+header nav a:first-child:hover {
+    border: transparent;
+    color: white;
+} 
+
+/* Space the a elements */
+.navigation a {
+    margin-right: 17px;
+    
+}
+
+/* underline the nav elements when they get hovered */
+.navigation a:hover {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+/* Main settings */
+main {
+    height: 500px;
+    padding: 20px;
+    padding-right: 0px; 
+    margin-bottom: 20px;
+}
+
+/*Button Send + transition */
+main button {
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    font-family: Inter;
+    cursor: pointer;
+    background-color: rgb(183, 173, 168);
+    color: white;
+    border: 1px solid black;
+    margin-left: -24px;
+    transition: background-color 0.1s, color 0.3s ease;
+}
+
+main button:hover {
+    background-color: rgba(255, 255, 255,30%);
+    color: rgb(0, 0, 0);
+    border-color: white;
+}
+
+/* Options at the left side of the screen + hover events*/
+.options {
+    border: 1px solid rgb(0, 0, 0);
+    width: 160px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+    background-color: rgba(255, 255, 255,30%);
+}
+
+/* Set the title of the options side bar */
+.options h3{
+    font-weight: 300;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+}
+
+/* Remove derocations and add a transition */
+.options a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s ease;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.options a:hover {
+    color: white;
+}
+
+.options:hover {
+    border-color: white;
+    color: color;
+}
+
+/* Subscribe div where users enter their information */
+.subscribe {
+    text-align: center;
+    width: 668px;
+    border: 1px solid black ;
+    border-radius: 10PX;
+    padding: 20px;
+    margin-left: 240px;
+    margin-top: -221px;
+}
+
+/* Style title */
+.info-header {
+    margin-bottom: 20px;
+}
+
+/* Space between inputs */
+.subscribe input {
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 50%);
+    height: 20px;
+    border: 1px solid black;
+}
+
+/* Tiltle */
+.info-header h2{
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+/* subtitle*/
+.info-header p {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+/* Input station */
+.subscribe form {
+    width: 100%;
+    margin: 20px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(255, 255, 255,30%);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* Position labels and inputs so they are organized */
+form label:nth-child(1) {
+    margin-left: -27px;
+}
+
+form label:nth-child(7) {
+    margin-left: -56px;
+}
+
+form label:nth-child(10) {
+    margin-left: -17px;
+}
+
+/* Footer settings */
+footer {
+    border-top: 1px solid rgb(0, 0, 0);
+    padding-top: 30px;
+    padding-left: 2%;
+    margin-top: 130px;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Remove the a elements decoration and remove the link default color */
+footer a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* Set the title of the lists*/
+footer h4{
+    font-weight: 500;
+    margin-bottom: 10px;
+    
+}
+
+/* Icons for the companys social media */
+footer img {
+    height: 30px;
+    margin-right: 10px
+}
+
+/* Social is the div that contains all the lists */
+/* set lists margin */
+.social ul{
+    margin-right: 100px;
+}
+
+/* Sercives and Privacy list */
+footer .service li,
+footer .privacy li{
+    list-style: none;
+    margin-right: 100px;
+}
+
+/* Set to inline-block*/
+.social li {
+    display: inline-block;
+}
+
+/* Make all the list title have a line under them */
+.privacy h4, .service h4, .social h4{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+/* Inline-block style to display them in columns + vertical align so they can all be at the same height*/
+.social,
+.service,
+.privacy {
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+/* Apply a hover effect on the sevices and privay lists, not the social media list */
+.service a, .privacy a {
+    border: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+.service a:hover, .privacy a:hover {
+    border-bottom: 1px solid;
+}
+
+
+/* Copyright set at the bottom of the page */
+.Copyright {
+    margin-top: 100px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}

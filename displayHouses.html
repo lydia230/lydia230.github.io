@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='displayStyle.css'>
+    
+</head>
+<body>
+    <header>
+        
+        <nav class="navigation">
+            <a href="index.html">CASA ETERNA</a>
+            <a href="about.html">About</a>
+            <a href="catalogue.html">Top Sellers</a>
+            <a href="agents.html">Agents</a>
+            <a href="favorite.html">Quiz</a>
+            <a href="account.html">Account</a>
+        </nav>
+    </header>
+
+    <h1>OUR PROPERTIES</h1>
+
+    <main id="main">
+        <div class="search">
+                    <input type="text" placeholder="Location" id="location">
+                    <button id="searchLocation">Search</button>
+                
+        </div>     
+
+        <div class="properties" id="properties">
+            <ul id="houses">
+                <!-- Load properties from API here -->
+            </ul>
+            <button type="button" id="loadMore">Load Properties</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social">
+            <ul>
+                <li>
+                    <h4>Follow Us</h4>
+                </li>
+                <br>
+                <li>
+                    <a href="#">
+                        <img src="images/x.svg">
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#">
+                        <img src="images/insta.svg">
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#">
+                        <img src="images/youtube.svg">
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#">
+                        <img src="images/linkd.svg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="service">
+            <ul>
+                <li>
+                    <h4>Services</h4>
+                </li>
+    
+                <li>
+                    <a href="about.html">
+                        About us
+                    </a>
+                </li>
+                <li>
+                    <a href="catalogue.html">
+                        Top Sellers
+                    </a>
+                </li>
+                <li>
+                    <a href="agents.html">
+                        Agents
+                    </a>
+                </li>
+                <li>
+                    <a href="favorite.html">
+                        Quiz
+                    </a>
+                </li>
+                <li>
+                    <a href="account.html">
+                        Account
+                    </a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="privacy">
+            <ul>
+                <li>
+                    <h4>Privacy</h4>
+                </li>
+                <li>
+                    <a href="https://www.priv.gc.ca/en/privacy-topics/technology/online-privacy-tracking-cookies/cookies/02_05_d_49/">
+                        Cookie policy
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.canada.ca/en/transparency/terms.html">
+                        Terms and Conditions
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.canada.ca/en/heritage-information-network/services/digital-preservation/concepts-developing-policies/introduction-policy.html">
+                        Policy
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.priv.gc.ca/en">
+                        Privacy
+                    </a>
+                </li>
+            </ul>
+    
+        </div>
+        <p class="Copyright">Copyright 2024 - All rights reserved</p>
+    </footer>
+    <script src='displayHouse.js'></script>
+</body>
+</html>

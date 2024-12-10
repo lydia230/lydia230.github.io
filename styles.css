@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting default font, color and spacing between items */
+body {
+    font-family: Inter;
+    letter-spacing: 0.55px;
+    font-size: 16px;
+    line-height: 28px;
+    background-color: rgb(220, 217, 214); 
+    
+}
+
+
+
+/* Center the Company Title */
+body h1 {
+    color: rgba(0, 0, 0, 75%);
+    margin-top: 5%;
+    margin-bottom: 7%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 10px;
+    
+}
+
+
+/* Header settings: 100% width */
+header {
+    height: 50px;
+    width: 100%;
+    margin-right: 20px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+/* Header foats to the left as opposed to nav */
+header h4 {
+    float: left ;
+    margin-top: 10px;
+    font-weight: 200;
+    margin-left: 25px;
+}
+
+/* Nav: Will be floating to the right */
+nav {
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+/* Remove text decoration and link default color. Add a transition when user hovers over the elements */
+header a{
+    text-decoration: none;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 11px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease ;
+}
+
+/* a elements in nav will be spaced out from each other */
+.navigation a {
+    margin-right: 20px;
+    
+}
+
+/* Effect when a elements get hovered*/
+.navigation a:hover, header a:hover {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+/* Width is not 100% and center items+ Add flex */
+main {
+    width: 90%; 
+    height: 900px;
+    margin: auto;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+/* space out images, center elements and apply flex */
+main ul {
+    display: flex;
+    gap: 10px; 
+    padding: 0; 
+}
+
+/* Remove list style, apply flex */
+main li {
+    list-style: none;
+    display: flex;
+}
+
+/* Image settings */
+main img {
+    height: 200px;
+}
+
+/* I've seperated the pictures in 3 part and each part is seperated in two (You can imagine a 3x2 rectangle) */
+/* But i only have to modify the first and second part */
+/* Setting the width of the images*/
+.FirstThird1 li:first-child img{
+    
+    width:400px;
+}
+.FirstThird1 li:nth-child(2) img{
+    
+    width:350px;
+}
+.FirstThird1 li:nth-child(3) img{
+    
+    width:370px;
+}
+
+
+.FirstThird2 li:first-child img {
+    width: 340px;
+}
+.FirstThird2 li:nth-child(2) img{
+    
+    width:380px;
+}
+.FirstThird2 li:nth-child(3) img{
+    
+    width:400px;
+}
+
+
+.Secondthird1 li:first-child img {
+    width: 380px;
+}
+.Secondthird1 li:nth-child(2) img{
+    
+    width:370px;
+}
+.Secondthird1 li:nth-child(3) img{
+    
+    width:370px;
+}
+
+
+.Secondthird2 li:first-child img {
+    width: 400px;
+}
+.Secondthird2 li:nth-child(2) img{
+    
+    width:400px;
+}
+.Secondthird2 li:nth-child(3) img{
+    
+    width:320px;
+}
+
+/* Options is the window where the user will click their next action */
+/* Center it in the picture collage + set it so make the buttons fit in */
+.options {
+    margin-top: -500px;
+    position: relative;
+    padding-top: 40px;
+    background-color: rgba(255, 255, 255, 90%);
+    width: 450px;
+    height: 130px;
+}
+
+/* Center the title of the options window */
+.options h4{
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Center the subtext*/
+.options p {
+    font-weight: 200;
+    text-align: center;
+}
+
+/* Set a transition and make its borders transparent */
+.options button {
+    background-color: rgb(222, 213, 200);
+    margin-top: 20px;
+    height: 25px;
+    width: 150px;
+    border: transparent;
+    font-family:Inter; 
+    transition: background-color 0.3s ease ;
+
+}
+
+/* button effect when the user hovers over it */
+.options button:hover {
+    cursor: pointer;
+    background-color: rgb(183, 173, 168);
+    color: rgb(255, 255, 255);
+}
+
+/* Catalogue and properties button settings */
+.catalogue {
+    margin-left: 10%; 
+}
+
+.properties{
+    margin-left: 12%; 
+}
+
+/* Footer settings */
+footer {
+    border-top: 1px solid rgb(0, 0, 0);
+    padding-top: 30px;
+    padding-left: 2%;
+    margin-top: 130px;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Remove the a elements decoration and remove the link default color */
+footer a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* Set the title of the lists*/
+footer h4{
+    font-weight: 500;
+    margin-bottom: 10px;
+    
+}
+
+/* Icons for the companys social media */
+footer img {
+    height: 30px;
+    margin-right: 10px
+}
+
+/* Social is the div that contains all the lists */
+/* set lists margin */
+.social ul{
+    margin-right: 100px;
+}
+
+/* Sercives and Privacy list */
+footer .service li,
+footer .privacy li{
+    list-style: none;
+    margin-right: 100px;
+}
+
+/* Set to inline-block*/
+.social li {
+    display: inline-block;
+}
+
+/* Make all the list title have a line under them */
+.privacy h4, .service h4, .social h4{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+/* Inline-block style to display them in columns + vertical align so they can all be at the same height*/
+.social,
+.service,
+.privacy {
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+/* Apply a hover effect on the sevices and privay lists, not the social media list */
+.service a, .privacy a {
+    border: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+.service a:hover, .privacy a:hover {
+    border-bottom: 1px solid;
+}
+
+
+/* Copyright set at the bottom of the page */
+.Copyright {
+    margin-top: 100px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+

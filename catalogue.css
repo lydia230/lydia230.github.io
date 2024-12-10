@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Set body font for the whole page */
+body {
+    font-family: Inter;
+     letter-spacing: 0.55px;
+     font-size: 16px;
+     line-height: 28px;
+     background-color: rgb(220, 217, 214); 
+     
+}
+
+/* Set the title in the center of the page */
+body h1 {
+    color: rgba(0, 0, 0, 75%);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 10px;
+    
+}
+
+/* Set size and other settings for the header*/
+header {
+    height: 50px;
+    width: 100%;
+    margin-right: 20px;
+    border-bottom: 1px solid ;
+}
+
+/* Pages that are not the index will only have 1 element to the left */
+header h4 {
+    float: left ;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: 200;
+}
+
+/* Make nav float to the right */
+nav {
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+/* Remove the text decoration and the color from the a element and set a transition when the user hovers over them */
+header a{
+    text-decoration: none;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 11px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease ;
+}
+
+/* Effect when the user hovers over an a element from the header */
+/* Underline appears */
+header a:hover {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+/* On the company name, the letters become white when the user hovers over it */
+header nav a:first-child {
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 200px;
+    transition: border 0.3s, color 0.3s ease;
+    
+}
+
+/* effect on the company logo */
+/* Changes color and removes the border */
+header nav a:first-child:hover {
+    border: transparent;
+    color: white;
+} 
+
+/* Space the a elements */
+.navigation a {
+    margin-right: 17px;
+    
+}
+
+/* underline the nav elements when they get hovered */
+.navigation a:hover {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+main {
+    height: 1500px;
+    width: 90%; 
+    padding-left: 65px ;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.firstTopHalf, .firstBottomHalf {
+    width: 50%;
+}
+
+.firstTopHalf li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 2%;
+}
+
+.firstTopHalf h5 {
+    font-weight: 500;
+}
+
+
+ .firstTopHalf p {
+    font-size: 10px;
+    line-height: 10px;
+    width: 150px;
+    font-weight: 300;
+    text-align: left;
+} 
+
+.firstTopHalf img {
+    width: 150px;
+}
+
+.firstTopHalf img {
+    height: 130px;
+}
+
+
+main h3 {
+    font-weight: 300;
+    margin-bottom: 2%;
+}
+
+.firstBottomHalf {
+    margin-top: 5%;
+}
+
+.firstBottomHalf li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.firstBottomHalf p{
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: 300;
+    width: 300px;
+    text-align: justify;
+    
+}
+
+.firstBottomHalf img:nth-child(1) {
+    width: 206px;
+}
+
+.firstBottomHalf img:nth-child(3) {
+    width: 95%;
+    height: 200px;
+}
+
+.firstBottomHalf .descriptionProperty {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 95%;
+}
+
+.firstBottomHalf h2{
+    text-align: center;
+    font-weight: 300;
+}
+
+.firstBottomHalf .winner {
+    width: 100%;
+    height: 350px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.SeconfTophalf, .SeconfBottomhalf {
+    width: 50%;
+    margin-left: 53%;
+}
+
+.SeconfTophalf {
+    margin-top: -132%;
+}
+
+.neighborhood1 {
+    margin-bottom: 20px;
+}
+
+.neighborhood1 li{
+    display: inline-block;
+    list-style: none;
+    vertical-align: top;
+    margin-right: 2%;
+}
+
+.neighborhood1 li p{
+    
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: 300;
+    width: 250px;
+    text-align: justify;
+}
+
+.neighborhood1 img {
+    width: 290px;
+}
+
+.neighborhood1 h5 {
+    text-align: center;
+}
+
+.SeconfTophalf h5 {
+    font-weight: 500;
+    
+}
+
+.SeconfBottomhalf h3{
+    font-weight: 300;
+    margin-bottom: 2%;
+}
+
+.SeconfBottomhalf ul li {
+    margin-bottom: 20px;
+    vertical-align: top;
+    display: inline-block;
+    list-style: none;
+}
+
+.SeconfBottomhalf ul p {
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: 300;
+    width: 250px;
+    text-align: justify;
+}
+
+.SeconfBottomhalf ul img {
+    width: 300px;
+    height: 220px;
+    margin-left: 5%;
+}
+
+.SeconfBottomhalf .avg3 img{
+    width: 250px;
+    height: 250px;
+    margin-right: 15px;
+    margin-left: 0;
+}
+
+.SeconfBottomhalf .avg4 img {
+    width: 250px;
+    height: 200px;
+    margin-right: 15px;
+    margin-left: 0;
+}
+
+
+
+
+footer {
+    border-top: 1px solid rgb(0, 0, 0);
+    padding-top: 30px;
+    padding-left: 2%;
+    margin-top: 130px;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Remove the a elements decoration and remove the link default color */
+footer a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* Set the title of the lists*/
+footer h4{
+    font-weight: 500;
+    margin-bottom: 10px;
+    
+}
+
+/* Icons for the companys social media */
+footer img {
+    height: 30px;
+    margin-right: 10px
+}
+
+/* Social is the div that contains all the lists */
+/* set lists margin */
+.social ul{
+    margin-right: 100px;
+}
+
+/* Sercives and Privacy list */
+footer .service li,
+footer .privacy li{
+    list-style: none;
+    margin-right: 100px;
+}
+
+/* Set to inline-block*/
+.social li {
+    display: inline-block;
+}
+
+/* Make all the list title have a line under them */
+.privacy h4, .service h4, .social h4{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+/* Inline-block style to display them in columns + vertical align so they can all be at the same height*/
+.social,
+.service,
+.privacy {
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+/* Apply a hover effect on the sevices and privay lists, not the social media list */
+.service a, .privacy a {
+    border: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+.service a:hover, .privacy a:hover {
+    border-bottom: 1px solid;
+}
+
+
+/* Copyright set at the bottom of the page */
+.Copyright {
+    margin-top: 100px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+

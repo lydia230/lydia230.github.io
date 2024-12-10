@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='favoriteStyle.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        const $quizImg = $('#quizImg');
+        const $yesBtn = $('#yesBtn');
+        const $noBtn = $('#noBtn');
+
+        const $quizImg2 = $('#quizImg2');
+        const $yesBtn2 = $('#yesBtn2');
+        const $noBtn2 = $('#noBtn2');
+
+        const $propertyForYou = $('#propertyForYou');
+        const $propertyForYou2 = $('#propertyForYou2');
+        const $reloadBtn = $('#reload');
+
+        $reloadBtn.on('click', function() {
+            history.go(0);
+        });
+
+    let jsonModern = [
+        { 
+            image: "images/quiz/quiz1.jpg" 
+        },
+        { 
+            image: "images/quiz/quiz2.jpg" 
+        },
+        { 
+            image: "images/quiz/quiz3.jpg" 
+        },
+        { 
+            image: "images/quiz/quiz4.jpg" 
+        },
+        { 
+            image: "images/quiz/quiz5.jpg" 
+        },
+    ];
+
+    let jsonSmall = [
+        { 
+            image: "images/quiz/quiz6.jpg" 
+        },
+        { 
+            image: "images/quiz/quiz7.jpg"
+         },
+        { 
+            image: "images/quiz/quiz8.jpg" 
+        },
+        { 
+            image: "images/quiz/quiz9.jpg" 
+        },
+        { 
+            image: "images/quiz/quiz10.jpg" 
+        },
+    ];
+
+    let countImg = 0;
+    let countImg2 = 0;
+    let yes = 0;
+    let no = 0;
+    let yes2 = 0;
+    let no2 = 0;
+
+    function loadQuiz1() {
+        if (countImg < jsonModern.length) {
+            $quizImg.attr('src', jsonModern[countImg].image);
+        }
+    }
+
+    function loadQuiz2() {
+        if (countImg2 < jsonSmall.length) {
+            $quizImg2.attr('src', jsonSmall[countImg2].image);
+        }
+    }
+
+    loadQuiz1();
+    loadQuiz2();
+    let finalMessage = "";
+
+    function appendFinalMessage() {
+
+        if (yes > no) {
+            finalMessage += " Great choice! Bigger homes offer more space for comfort, entertainment, and personal freedom. With expansive living areas, you'll have room to create the ultimate living experience, whether it’s a home theater, gym, or multiple bedrooms for family and guests.";
+        } else if (no > yes) {
+            finalMessage += " Looks like you prefer more compact and cozy spaces! Bigger houses can feel overwhelming and harder to maintain, so it makes sense if you appreciate a simpler, more manageable living space.";
+        }
+
+        if (yes2 > no2) {
+            finalMessage += " Interesting choice! Smaller homes often offer a cozy, more manageable space that’s easier to maintain. They can be more energy-efficient and environmentally friendly, making them perfect for those who value simplicity and practicality.";
+        } else if (no2 > yes2) {
+            finalMessage += " Looks like you prefer more space to spread out! Small houses can sometimes feel cramped, with limited room for personal activities or storage.";
+        }
+        
+        $propertyForYou.text(finalMessage);
+    }
+
+    $yesBtn.on('click', function() {
+        countImg++;
+        yes++;
+        if (countImg >= jsonModern.length) {
+            $('#yesBtn').addClass('hide');
+            $('#noBtn').addClass('hide');
+            appendFinalMessage(); 
+        }
+        loadQuiz1();
+    });
+
+    $noBtn.on('click', function() {
+        no++;
+        countImg++;
+        if (countImg >= jsonModern.length) {
+            $('#yesBtn').addClass('hide');
+            $('#noBtn').addClass('hide');
+            appendFinalMessage(); 
+        }
+        loadQuiz1();
+    });
+
+    $yesBtn2.on('click', function() {
+        countImg2++;
+        yes2++;
+        if (countImg2 >= jsonSmall.length) {
+            $('#yesBtn2').addClass('hide');
+            $('#noBtn2').addClass('hide');
+            appendFinalMessage(); 
+        }
+        loadQuiz2();
+    });
+
+    $noBtn2.on('click', function() {
+        countImg2++;
+        no2++;
+        if (countImg2 >= jsonSmall.length) {
+            $('#yesBtn2').addClass('hide');
+            $('#noBtn2').addClass('hide');
+            appendFinalMessage(); 
+        }
+        loadQuiz2();
+    });
+});
+
+    </script>
+
+</head>
+<body>
+    <header>
+
+        
+        <nav class="navigation">
+            <a href="index.html">CASA ETERNA</a>
+            <a href="about.html">About</a>
+            <a href="catalogue.html">Top Sellers</a>
+            <a href="agents.html">Agents</a>
+            <a href="favorite.html">Quiz</a>
+            <a href="subscription.html">Subscription</a>
+        </nav>
+    </header>
+
+    <h1>WHAT TYPE OF PROPERTY FITS YOU</h1>
+
+    <main>
+        <div>
+           <img id="quizImg" style="height: 200px; width: 30%; margin-left: 35%;">
+           <br>
+           <div class="btns" style="margin-left: 44%;">
+            <button type="button" id="yesBtn">Yes</button>
+            <button type="button" id="noBtn" >No</button>
+           </div>
+
+
+           <img id="quizImg2" style="height: 200px; width: 30%; margin-left: 35%; margin-top: 5%;">
+           <br>
+           <div class="btns" style="margin-left: 44%;">
+            <button type="button" id="yesBtn2">Yes</button>
+            <button type="button" id="noBtn2" >No</button>
+            
+        </div>
+           <p id="propertyForYou" style="text-align: center; font-family: serif; font-weight: 200;"></p>
+           <button type="button" style="margin-left: 45%; width: 100px;" id="reload">Reload Quiz</button>
+        </div>
+    </main>
+
+   <footer>
+
+        <div class="social">
+            <ul>
+                <li>
+                    <h4>Follow Us</h4>
+                </li>
+                <br>
+                <li>
+                    <a href="#">
+                        <img src="images/x.svg">
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#">
+                        <img src="images/insta.svg">
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#">
+                        <img src="images/youtube.svg">
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#">
+                        <img src="images/linkd.svg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="service">
+            <ul>
+                <li>
+                    <h4>Services</h4>
+                </li>
+    
+                <li>
+                    <a href="about.html">
+                        About us
+                    </a>
+                </li>
+                <li>
+                    <a href="catalogue.html">
+                        Top Sellers
+                    </a>
+                </li>
+                <li>
+                    <a href="agents.html">
+                        Agents
+                    </a>
+                </li>
+                <li>
+                    <a href="favorite.html">
+                        Quiz
+                    </a>
+                </li>
+                <li>
+                    <a href="subscription.html">
+                        Subscribe
+                    </a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="privacy">
+            <ul>
+                <li>
+                    <h4>Privacy</h4>
+                </li>
+                <li>
+                    <a href="https://www.priv.gc.ca/en/privacy-topics/technology/online-privacy-tracking-cookies/cookies/02_05_d_49/">
+                        Cookie policy
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.canada.ca/en/transparency/terms.html">
+                        Terms and Conditions
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.canada.ca/en/heritage-information-network/services/digital-preservation/concepts-developing-policies/introduction-policy.html">
+                        Policy
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.priv.gc.ca/en">
+                        Privacy
+                    </a>
+                </li>
+            </ul>
+    
+        </div>
+        <p class="Copyright">Copyright 2024 - All rights reserved</p>
+    </footer>
+</body>
+</html>

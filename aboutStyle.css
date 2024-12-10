@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Set body font for the whole page */
+body {
+    font-family: Inter;
+     letter-spacing: 0.55px;
+     font-size: 16px;
+     line-height: 28px;
+     background-color: rgb(220, 217, 214); 
+     
+}
+
+/* Set the title in the center of the page */
+body h1 {
+    color: rgba(0, 0, 0, 75%);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 10px;
+    
+}
+
+/* Set size and other settings for the header*/
+header {
+    height: 50px;
+    width: 100%;
+    margin-right: 20px;
+    border-bottom: 1px solid ;
+}
+
+/* Pages that are not the index will only have 1 element to the left */
+header h4 {
+    float: left ;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: 200;
+}
+
+/* Make nav float to the right */
+nav {
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+/* Remove the text decoration and the color from the a element and set a transition when the user hovers over them */
+header a{
+    text-decoration: none;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 11px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease ;
+}
+
+/* Effect when the user hovers over an a element from the header */
+/* Underline appears */
+header a:hover {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+/* On the company name, the letters become white when the user hovers over it */
+header nav a:first-child {
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 200px;
+    transition: border 0.3s, color 0.3s ease;
+    
+}
+
+/* effect on the company logo */
+/* Changes color and removes the border */
+header nav a:first-child:hover {
+    border: transparent;
+    color: white;
+} 
+
+/* Space the a elements */
+.navigation a {
+    margin-right: 17px;
+    
+}
+
+/* underline the nav elements when they get hovered */
+.navigation a:hover {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+main {
+    height: 2300px;
+    width: 90%; 
+    padding-left: 70px ;
+    padding-right: 0px; 
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+main ul {
+    display: flex;
+    padding: 0;
+    margin: 20px auto;
+}
+
+main h1 {
+    margin-top: 50px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+
+main p {
+    
+    height: 250px;
+    text-align:center;
+    text-align-last: center;
+    font-size: 12px;
+    font-weight: 300;
+    
+}
+
+.story {
+    border-bottom:1px solid rgba(0, 0, 0, 40%);
+    
+}
+
+
+
+.ceo {
+    margin-top: 150px;
+    margin-right: auto;
+}
+
+.ceo li:first-child p {
+    font-weight: 500;
+}
+
+.ceo li {
+   
+    list-style: none;
+    display: inline-block;
+}
+
+/* Static images */
+.ceo img, .group img {
+    height: 220px;
+    width: 261px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+.ceo li:nth-child(1) {
+    margin-left: 100px;
+}
+
+
+.ceo li:nth-child(2) p{
+
+    width: 600px;
+    margin-left: 70px;
+    text-align-last:left ;
+    text-align: justify;
+}
+
+
+
+.group {
+    margin-top: -140px;
+    
+}
+
+.group li:first-child p {
+    font-weight: 500;
+}
+
+.group li {
+    list-style: none;
+    display: inline-block;
+    
+}
+
+.group img {
+    height: 180px;
+    width: 260px;
+}
+
+
+
+.group li:nth-child(1) {
+    margin-left: 100px;
+}
+
+
+.group li:nth-child(2) p{
+
+    width: 600px;
+    margin-left: 70px;
+    text-align-last:left ;
+    text-align: justify;
+    
+}
+
+.seperator {
+    padding-top: 15px;
+    width: 100%;
+    height: 170px;
+    background-color: rgba(0, 0, 0, 10%);
+    margin-top: -90px;
+}
+
+
+.vision {
+    margin-top: 70px;
+}
+
+.vision li{
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 500px;
+    list-style: none;
+    display: inline-block;
+}
+
+.vision li p {
+    text-indent: 20px;
+    text-align:justify;
+    text-align-last:unset ;
+}
+
+
+footer {
+    border-top: 1px solid rgb(0, 0, 0);
+    padding-top: 30px;
+    padding-left: 2%;
+    margin-top: 130px;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Remove the a elements decoration and remove the link default color */
+footer a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* Set the title of the lists*/
+footer h4{
+    font-weight: 500;
+    margin-bottom: 10px;
+    
+}
+
+/* Icons for the companys social media */
+footer img {
+    height: 30px;
+    margin-right: 10px
+}
+
+/* Social is the div that contains all the lists */
+/* set lists margin */
+.social ul{
+    margin-right: 100px;
+}
+
+/* Sercives and Privacy list */
+footer .service li,
+footer .privacy li{
+    list-style: none;
+    margin-right: 100px;
+}
+
+/* Set to inline-block*/
+.social li {
+    display: inline-block;
+}
+
+/* Make all the list title have a line under them */
+.privacy h4, .service h4, .social h4{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+/* Inline-block style to display them in columns + vertical align so they can all be at the same height*/
+.social,
+.service,
+.privacy {
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+/* Apply a hover effect on the sevices and privay lists, not the social media list */
+.service a, .privacy a {
+    border: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+.service a:hover, .privacy a:hover {
+    border-bottom: 1px solid;
+}
+
+
+/* Copyright set at the bottom of the page */
+.Copyright {
+    margin-top: 100px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}

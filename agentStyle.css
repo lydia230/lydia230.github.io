@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set body font for the whole page */
+body {
+    font-family: Inter;
+     letter-spacing: 0.55px;
+     font-size: 16px;
+     line-height: 28px;
+     background-color: rgb(220, 217, 214); 
+     
+}
+
+/* Set the title in the center of the page */
+body h1 {
+    color: rgba(0, 0, 0, 75%);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 10px;
+    
+}
+
+/* Set size and other settings for the header*/
+header {
+    height: 50px;
+    width: 100%;
+    margin-right: 20px;
+    border-bottom: 1px solid ;
+}
+
+/* Pages that are not the index will only have 1 element to the left */
+header h4 {
+    float: left ;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: 200;
+}
+
+/* Make nav float to the right */
+nav {
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+/* Remove the text decoration and the color from the a element and set a transition when the user hovers over them */
+header a{
+    text-decoration: none;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 11px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease ;
+}
+
+/* Effect when the user hovers over an a element from the header */
+/* Underline appears */
+header a:hover {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+/* On the company name, the letters become white when the user hovers over it */
+header nav a:first-child {
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 200px;
+    transition: border 0.3s, color 0.3s ease;
+    
+}
+
+/* effect on the company logo */
+/* Changes color and removes the border */
+header nav a:first-child:hover {
+    border: transparent;
+    color: white;
+} 
+
+/* Space teh a elements */
+.navigation a {
+    margin-right: 17px;
+    
+}
+
+/* underline the nav elements when they get hovered */
+.navigation a:hover {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+/* text is under the title and it is set to the center */
+.quote {
+    width: 550px;
+    text-align: center;
+    margin-left: 28%;
+    font-size: 13px;
+    font-weight: 200;
+    margin-bottom: 80px;
+    margin-top: -50px;
+}
+
+/* set the main properties for the pictures of the agents */
+main {
+    height: 1150px;
+    width: 90%; 
+    padding-left: 70px ;
+    padding-right: 0px; 
+    overflow: hidden;
+}
+
+/* Text about a specific agent */
+main p {
+    font-size: 12px;
+    line-height: 15px;
+    text-align:justify;
+    letter-spacing: 0px;
+    width: 140px;
+    
+}
+
+/* Center the lists */
+main ul {
+    text-align: center;
+}
+
+/* Set to inline-block and set to relative*/
+main li {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    margin-bottom:50px;
+    margin-left: 20px;
+}
+
+/* Set their name */
+main li h5 {
+    font-weight: 200;
+}
+
+/*  Second section of the page*/
+main h2 {
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    font-weight: 200;
+}
+
+/* set image lengths and add a transition when the user hovers over */
+main li img {
+    border: 1px solid transparent;
+    width: 180px;
+    height: 160px;
+    transition: opacity 0.3s, border 0.3s ease;
+}
+
+/* blur the image to display the text */
+main li:hover img{
+    opacity: 0.3;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+/* Text on top of picture + its position */
+ main li .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -62%);
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Make text appear */
+main li:hover .text-overlay {
+    opacity: 1;
+}
+
+/* paragraph behaviour */
+.text-overlay p {
+    text-align:center;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+/* remove decoratoin and color */
+main a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* Footer settings */
+footer {
+    border-top: 1px solid rgb(0, 0, 0);
+    padding-top: 30px;
+    padding-left: 2%;
+    margin-top: 130px;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Remove the a elements decoration and remove the link default color */
+footer a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* Set the title of the lists*/
+footer h4{
+    font-weight: 500;
+    margin-bottom: 10px;
+    
+}
+
+/* Icons for the companys social media */
+footer img {
+    height: 30px;
+    margin-right: 10px
+}
+
+/* Social is the div that contains all the lists */
+/* set lists margin */
+.social ul{
+    margin-right: 100px;
+}
+
+/* Sercives and Privacy list */
+footer .service li,
+footer .privacy li{
+    list-style: none;
+    margin-right: 100px;
+}
+
+/* Set to inline-block*/
+.social li {
+    display: inline-block;
+}
+
+/* Make all the list title have a line under them */
+.privacy h4, .service h4, .social h4{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+/* Inline-block style to display them in columns + vertical align so they can all be at the same height*/
+.social,
+.service,
+.privacy {
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+/* Apply a hover effect on the sevices and privay lists, not the social media list */
+.service a, .privacy a {
+    border: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+.service a:hover, .privacy a:hover {
+    border-bottom: 1px solid;
+}
+
+
+/* Copyright set at the bottom of the page */
+.Copyright {
+    margin-top: 100px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}

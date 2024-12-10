@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set body font for the whole page */
+body {
+    font-family: Inter;
+     letter-spacing: 0.55px;
+     font-size: 16px;
+     line-height: 28px;
+     background-color: rgb(220, 217, 214); 
+     
+}
+
+/* Set the title in the center of the page */
+body h1 {
+    color: rgba(0, 0, 0, 75%);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 10px;
+    
+}
+
+/* Set size and other settings for the header*/
+header {
+    height: 50px;
+    width: 100%;
+    margin-right: 20px;
+    border-bottom: 1px solid ;
+}
+
+/* Pages that are not the index will only have 1 element to the left */
+header h4 {
+    float: left ;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: 200;
+}
+
+/* Make nav float to the right */
+nav {
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+/* Remove the text decoration and the color from the a element and set a transition when the user hovers over them */
+header a{
+    text-decoration: none;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 11px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease ;
+}
+
+/* Effect when the user hovers over an a element from the header */
+/* Underline appears */
+header a:hover {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+/* On the company name, the letters become white when the user hovers over it */
+header nav a:first-child {
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 200px;
+    transition: border 0.3s, color 0.3s ease;
+    
+}
+
+/* effect on the company logo */
+/* Changes color and removes the border */
+header nav a:first-child:hover {
+    border: transparent;
+    color: white;
+} 
+
+/* Space the a elements */
+.navigation a {
+    margin-right: 17px;
+    
+}
+
+/* underline the nav elements when they get hovered */
+.navigation a:hover {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+
+main {
+    
+    height: 500px;
+    width: 90%; 
+    padding-left: 70px ;
+    padding-right: 0px; 
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.agents img {
+    border: 1px solid black;
+   border-radius: 10px;
+    width: 100%;
+    height: 220px;
+}
+
+.agents h4 {
+   font-weight: 200;
+}
+
+
+
+.agents {
+    
+    border: 1px solid black;
+    width: 250px;
+    height: 325px;
+    border-radius: 10px;
+    margin-left: 210px;
+    padding:20px;
+}
+
+
+
+.contact {
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    width: 340px;
+    height: 325px;
+    padding:20px;
+    border-radius: 10px;
+    margin-left: 530px;
+    margin-top: -366px;
+}
+
+.contact h4 {
+    font-weight: 200;
+    margin-bottom: 40px;
+    border-bottom: 1px solid black;
+}
+
+.contact div {
+    margin-bottom: 10px;
+}
+
+.contact label {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.contact input[type=text]{
+    background-color: rgba(255, 255, 255, 100%);
+    height: 20px;
+    border: 1px solid black;
+    padding-left: 2px;
+}
+
+
+.Phone-Number {
+    margin-left: -30px;
+}
+
+.email {
+    margin-left: 27px;
+}
+
+.property {
+    margin-left: -10px;
+}
+
+.description {
+    margin-left: -10px;
+    
+}
+
+main button {
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    font-family: Inter;
+    cursor: pointer;
+    background-color: rgb(183, 173, 168);
+    color: white;
+    border: 1px solid black;
+    margin-left: 6px;
+    transition: background-color 0.1s, color 0.3s ease;
+}
+
+main button:hover {
+    background-color: rgba(255, 255, 255,30%);
+    color: rgb(0, 0, 0);
+    border-color: white;
+}
+
+footer {
+    border-top: 1px solid black;
+    padding-top: 30px;
+    padding-left: 20px;
+    
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+footer a:hover {
+    border-bottom: 1px solid black;
+}
+
+footer h4 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+footer img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.social ul {
+    margin-right: 100px;
+}
+
+footer .service li,
+footer .privacy li {
+    list-style: none;
+    margin-right: 100px;
+}
+
+.social h4,
+.privacy h4,
+.service h4 {
+    border-bottom: 1px solid black;
+}
+
+.social li {
+    display: inline-block;
+}
+
+footer .social,
+footer .service,
+footer .privacy {
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer .Copyright {
+    margin-top: 100px;
+    text-align: center;
+    border-bottom: 1px solid rgb(113, 54, 27);
+}
